@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="https://jakarta.ee/xml/ns/jakartaee" xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_6_0.xsd" version="6.0">
+ 
+  <welcome-file-list>
+    <welcome-file>home.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  
+   <servlet>
+    <servlet-name>RegServlet</servlet-name>
+    <servlet-class>app.RegServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+    <servlet-name>RegServlet</servlet-name>
+    <url-pattern>/RegServlet</url-pattern>
+</servlet-mapping> 
+  
+ <servlet>
+    <servlet-name>LoginServlet</servlet-name>
+    <servlet-class>app.LoginServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+    <servlet-name>LoginServlet</servlet-name>
+    <url-pattern>/LoginServlet</url-pattern>
+</servlet-mapping>  
+  
+   <servlet>
+    <servlet-name>ProjectsServlet</servlet-name>
+    <servlet-class>app.ProjectsServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+    <servlet-name>ProjectsServlet</servlet-name>
+    <url-pattern>/ProjectsServlet</url-pattern>
+</servlet-mapping> 
+  
+  
+  
+    <servlet>
+    <servlet-name>CreateProjectServlet</servlet-name>
+    <servlet-class>app.CreateProjectServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+    <servlet-name>CreateProjectServlet</servlet-name>
+    <url-pattern>/CreateProjectServlet</url-pattern>
+</servlet-mapping> 
+
+  <servlet>
+    <servlet-name>TodoServlet</servlet-name>
+    <servlet-class>app.TodoServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+    <servlet-name>TodoServlet</servlet-name>
+    <url-pattern>/TodoServlet</url-pattern>
+</servlet-mapping> 
+
+
+  <servlet>
+    <servlet-name>CreateTodoServlet</servlet-name>
+    <servlet-class>app.CreateTodoServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+    <servlet-name>CreateTodoServlet</servlet-name>
+    <url-pattern>/CreateTodoServlet</url-pattern>
+</servlet-mapping> 
+
+
+  <servlet>
+    <servlet-name>UpdateTodoServlet</servlet-name>
+    <servlet-class>app.UpdateTodoServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+    <servlet-name>UpdateTodoServlet</servlet-name>
+    <url-pattern>/UpdateTodoServlet</url-pattern>
+</servlet-mapping> 
+  
+  
+   <servlet>
+    <servlet-name>DeleteTodoServlet</servlet-name>
+    <servlet-class>app.DeleteTodoServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+    <servlet-name>DeleteTodoServlet</servlet-name>
+    <url-pattern>/DeleteTodoServlet</url-pattern>
+</servlet-mapping> 
+  
+  
+ 
+  
+     <servlet>
+    <servlet-name> UpdateProjectTitleServlet</servlet-name>
+    <servlet-class>app.UpdateProjectTitleServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+    <servlet-name>UpdateProjectTitleServlet</servlet-name>
+    <url-pattern>/UpdateProjectTitleServlet</url-pattern>
+</servlet-mapping> 
+
+  <servlet>
+    <servlet-name>UpdateTodoStatusServlet</servlet-name>
+    <servlet-class>app.UpdateTodoStatusServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+    <servlet-name>UpdateTodoStatusServlet</servlet-name>
+    <url-pattern>/UpdateTodoStatusServlet</url-pattern>
+</servlet-mapping> 
+
+
+
+ <servlet>
+    <servlet-name>ExportSummaryServlet</servlet-name>
+    <servlet-class>app.ExportSummaryServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+    <servlet-name>ExportSummaryServlet</servlet-name>
+    <url-pattern>/ExportSummaryServlet</url-pattern>
+</servlet-mapping>
+
+</web-app>
